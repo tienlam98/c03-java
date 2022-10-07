@@ -44,22 +44,19 @@
 // bai5
 // function getTypeLetter() {
 //     let x = prompt("Nhap ki tu bat ky");
-//     if (x === Number(1,2,3,4,5,6,7,8,9,0)) {
+//     if (typeof x == "number") {
 //         console.log("So");
 //     }
-//     else if (x === String("A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z")) {
+//     else if (x >= "A" && x <= "Z") {
 //         console.log("Hoa");
 //             }
     
-//         else if (x === String("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z")) {
+//         else if (x >= "a" && x <= "z") {
 //             console.log("thuong");
 //         }
 //             else console.log("Ki tu dac biet");
 // }
 // getTypeLetter();
-
-
-
 
 // bai6
 // function phTrinhBac1() {
@@ -102,7 +99,7 @@
 // phTrinhBac2();
 
 // bai8
-function readNumber() {
+function docSoNguyen() {
 let x = prompt("Nhap so nguyen hai chu so");
 if (x < 10 || x > 99) {
     console.log("So khong hop le");
@@ -170,8 +167,56 @@ else {
     }
 }
 }
-readNumber();
+docSoNguyen();
 
-
-
+// cần cải thiện: if else có dấu ngoặc {} đầy đủ, trình bày gọn gàng ngay hàng thẳng lối
+// bai9
+// function validate() {
+//     let d = prompt("nhap ngay");
+// let m = prompt("nhap thang");
+// let y = prompt("nhap nam");
+// let namNhuan = Math.floor(y % 4);
+// if (y < 0) {
+//     console.log("Khong hop le");
+// }
+// else {
+//     if (m < 1 || m > 12) {
+//         console.log("Khong hop le");
+//     }
+//     else {
+//         switch (m) {
+//             case 1: case 3: case 5: case 7: case 8: case 10: case 12:
+//                 if (d >= 1 || d <= 31) {
+//                     console.log("hop le");
+//                 }
+//                 else {
+//                     console.log("ko hop le");
+//                 }
+//             case 2: 
+//                 if (namNhuan == 0) {
+//                     if (d >= 1 || d <= 29) {
+//                         console.log("hop le");
+//                     }
+//                     else {
+//                         console.log("Ko hop le");
+//                     }       
+//                 }        
+//                 else {
+//                     if (d >= 1 || d <= 28) {
+//                         console.log("hop le");
+//                     }
+//                     else {
+//                         console.log("Ko hop le");
+//                     }
+//                 }
+//             case 4: case 6: case 9: case 11:
+//                 if (d >= 1 || d <= 30) {
+//                     console.log("hop le");
+//                 }
+//                 else {
+//                     console.log("KO hop le");
+//                 }
+//         }
+//     }
+// }
 
